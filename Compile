@@ -1,0 +1,9 @@
+#! /bin/bash
+
+./Clean
+
+pdflatex neutronDVCS.tex
+bibtex   neutronDVCS
+pdflatex neutronDVCS.tex
+pdflatex neutronDVCS.tex
+

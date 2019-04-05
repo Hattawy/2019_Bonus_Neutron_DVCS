@@ -1,0 +1,8 @@
+#! /bin/bash
+
+pdflatex abstract_only.tex
+pdflatex abstract_only.tex
+
+rm abstract_only.aux abstract_only.bbl abstract_only.blg abstract_only.log abstract_only.out abstract_only.maf 
+rm abstract_only.mtc* abstract_only.mtc1 abstract_only.nlo
+rm formatAndDefs.aux

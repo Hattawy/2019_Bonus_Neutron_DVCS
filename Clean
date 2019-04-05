@@ -1,0 +1,4 @@
+#! /bin/bash
+
+rm -f *.{blg,bbl,toc,out,log,aux,dvi,maf,mtc,nlo,brf,mtc0}
+
