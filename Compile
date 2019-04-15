@@ -7,3 +7,10 @@ bibtex   neutronDVCS
 pdflatex neutronDVCS.tex
 pdflatex neutronDVCS.tex
 
+
+rm 	neutronDVCS.aux
+rm	neutronDVCS.bbl
+rm	neutronDVCS.blg
+rm	neutronDVCS.log
+rm	neutronDVCS.out
+rm	neutronDVCS.toc
