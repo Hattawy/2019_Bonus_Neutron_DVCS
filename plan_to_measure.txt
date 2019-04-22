@@ -1,6 +1,0 @@
-
-1 BSA binned in 3D or 4D if possible for future fits
-2 Functions of Ps kinematic in a single high statistics bin
-3 compare fully exclusive and missing neutron in few high statistics bin
-
-
