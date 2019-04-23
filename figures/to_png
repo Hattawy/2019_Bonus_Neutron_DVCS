@@ -1,0 +1,4 @@
+#!/bin/bash
+for pdfile in dvcs_feynman-figure*.pdf ; do
+  convert -verbose -density 500 -resize '800' "${pdfile}" "${pdfile%.*}".png
+done
