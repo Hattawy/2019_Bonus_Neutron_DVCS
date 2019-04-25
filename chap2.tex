@@ -3,7 +3,28 @@
 
 \section{Run Group F conditions}
 
-MH will write this
+Run Group F (E12-06-113) has been approved to collect 35 days (100\% 
+efficiency) of data on deuterium with 10.7 GeV electron beam and another six 
+days on hydrogen. One of the days of hydrogen data taking will be carried out 
+with a low energy electron beam of about 2.2 GeV. The 40~cm long target filled 
+with 7 atm deuterium gas at room temperature and the 200~nA electron beam will 
+yield a combined luminosity of about 2$\times$10$^{34}$cm$^{-2}$s$^{-1}$, about 
+a factor of five below the standard CLAS12 luminosity.
+
+For the detection of the recoil protons, Run Group F is going to install a new 
+and enlarged radial time projection chamber (RTPC) and target gas cell 
+assembly, very similar to the ones used by the BoNuS (E03-012) and eg6 
+(E08-024)experiments. The RTPC can detect proton recoil momenta down to a lower 
+limit of 70 MeV/c while being insensitive to minimum ionizing particles. The 
+RTPC will be replacing the central detector's silicon tracker
+and barrel micromegas, while keeping an updated design of the forward 
+micromegas (FMT). In the updated design of the FMT, only three layers of 
+micromegas will be kept to improve the electron's reconstructed vertex 
+resolution while reducing the material in the path of the electrons. In the 
+following sections we briefly introduce the experimental setup of Run Group F 
+and refer the reader to more references for more detailed descriptions of the 
+individual sub-detectors. 
+
 
 %%%%%%%%%%%%%%%%%%
 \section{The CLAS12 Spectrometer}
@@ -12,9 +33,29 @@ The CLAS12 spectrometer is designed to operate with 11~GeV beam at an
 electron-nucleon luminosity of $\mathcal{L} = 
 1\times10^{35}~$cm$^{-2}$s$^{-1}$. The baseline configuration of the CLAS12 
 detector consists of the forward detector and the central detector 
-packages~\cite{CD} (see Figure~\ref{fig:fd}). We use the forward detector for 
-electron and photon detection. The central detector's silicon tracker and 
-barrel micromegas will be removed to leave room for the BONuS12 RTPC.  
+packages~\cite{CD} (see Figure~\ref{fig:fd}).
+The CLAS12 Central Detector~\cite{CD} is designed to detect various charged 
+particles over a wide momentum and angular range. The main detector package 
+includes:
+\begin{itemize}
+ \item Solenoid Magnet: provides a central longitudinal magnetic field up to 
+5~Tesla, which serves to curl emitted low energy M{\o}ller electrons and determine 
+particle momenta through tracking in the central detector.
+ \item Central Tracker: consists of 3 double layers of silicon strips and 6 
+    layers of Micromegas. The thickness of a single silicon layer is  
+    \SI{320}{\um}.
+ \item Central Time-of-Flight: an array of scintillator paddles with a 
+cylindrical geometry of radius 26 cm and length 50 cm; the thickness of the 
+detector is 2 cm with designed timing resolution of $\sigma_t = 50$ ps, used 
+to separate pions and protons up to 1.2 GeV/$c$.
+\end{itemize}
+
+We will use the forward detector for electron, photon, and neutron detection.  
+The central detector's silicon tracker and barrel micromegas will be removed to 
+leave room for the BONuS12 RTPC for the detection of the slow recoiling protons 
+in deuterium. In addition to the main sub-detectors of CLAS12 Central detector, 
+we will be using the Central Neutron Detector (CND) for the detection of the 
+final state recoiling neutrons.  
 
 \begin{figure}
   \begin{center}
@@ -28,16 +69,20 @@ barrel micromegas will be removed to leave room for the BONuS12 RTPC.
   \end{center}
 \end{figure}
 
-The scattered electrons and photons will be detected in the forward detector which consists 
-of the High Threshold Cherenkov Counters (HTCC), Drift Chambers (DC), the Low 
-Threshold Cherenkov Counters (LTCC), the Time-of-Flight scintillators (TOF), 
-the Forward Calorimeter and the Preshower Calorimeter. The charged particle 
-identification in the forward detector is achieved by utilizing the combination 
-of the HTCC, LTCC and TOF arrays with the tracking information from the Drift 
-Chambers. The HTCC together with the Forward Calorimeter and the Preshower 
-Calorimeter will provide a pion rejection factor of more than 2000 up to a 
-momentum of 4.9~GeV/c, and a rejection factor of 100 above 4.9 GeV/c. The photons
-are detected using the calorimeters.
+
+The scattered electron, photon, and neutron will be detected in the forward 
+detector which consists of the High Threshold Cherenkov Counters (HTCC), Drift 
+Chambers (DC), the Low Threshold Cherenkov Counters (LTCC), the Time-of-Flight 
+scintillators (TOF), the Forward Calorimeter and the Preshower Calorimeter. The 
+charged particle identification in the forward detector is achieved by 
+utilizing the combination of the HTCC, LTCC and TOF arrays with the tracking 
+information from the Drift Chambers. The HTCC together with the Forward 
+Calorimeter and the Preshower Calorimeter will provide a pion rejection factor 
+of more than 2000 up to a momentum of 4.9~GeV/c, and a rejection factor of 100 
+above 4.9 GeV/c. The photons and the neutrons are detected using the 
+calorimeters. As will be showing later on, the majority of the final state 
+recoiling neutrons will be detected using the sub-detectors of CLAS12 Central 
+Detector, in particular CTOF and CND. 
 
 \section{BONuS12 RTPC} 
 
@@ -104,7 +149,6 @@ from the beam line towards larger radius:\\
 
 
 \section{Beam Polarization}
-
 MH will write
 
 needs to explain what goes with it, in terms of calibration and, most importantly, 
