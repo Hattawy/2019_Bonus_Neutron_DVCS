@@ -171,31 +171,152 @@ neutron DVCS semi-exclusively (E12-11-003).
 \end{figure}
 
 
+\section{Beam-Spin Asymmetry}
+
+The beam spin asymmetry of a longitudinally polarized electron beam on an 
+unpolarized target ($A_{LU}$) in each bin of the 108 total bins is defined as:
+%
+\begin{equation}
+  A_{LU} = \frac{1}{P_{B}} \frac{N^{+} - N^{-}}{N^{+} + N^{-} }.
+\end{equation}
+%
+where $P_{B}$ is the beam polarization, and $N^{+}$ and $N^{-}$ are the number 
+of events detected with positive and negative electron helicity, respectively.  
+The statistical uncertainty of $A_{LU}$ is
+%
+\begin{equation}
+  \sigma_{A_{LU}} = \frac{1}{P_{B}} \sqrt{ \frac{1 - (P_{B}A_{LU})^{2}}{N}}
+\end{equation}
+%
+where $N (= N^{+} + N^{-}) $ is the total number of measured DVCS events in 
+each bin.
+
+It is particularly convenient to use the BSA $A_{LU}$ as a DVCS observable, 
+because most of the experimental systematic uncertainties, such as 
+normalization and efficiencies that appear in the cross sections cancel out in 
+the asymmetry ratio. However, some systematic uncertainties remain and they 
+still contribute to the measured $A_{LU}$. The main known sources of systematic 
+uncertainties are: the DVCS selection cuts, the fitting sensitivity to our 
+binning, the beam polarization and the background (non exclusive $\pi^0$) 
+acceptance ratio. In the following, we present estimates of the contribution 
+from each source based on our prior knowledge during CLAS-eg6 DVCS analysis 
+\cite{eg6_note}.
+
+In order to evaluate the systematic uncertainties stemming from the DVCS 
+selection cuts, the eg6-analysis was repeated with changing the width of the 
+exclusive cuts. The resulting systematic uncertainty to the $A_{LU}$ asymmetry
+was around 6$\%$ for the incoherent DVCS channel. Because of the important 
+improvement we expect with BONuS12 RTPC in terms of resolutions, we expect this 
+uncertainty to be reduced to 4$\%$.
+
+Regarding the sensitivity of the fit results to our binning, the eg6 data were 
+binned into two different bins in $\phi$ and the reconstructed asymmetries were 
+compared. The associated systematic uncertainty for $A_{LU}$ at $\phi = 90 
+^{\circ}$ was found to be of 7.1$\%$. For the proposed measurements, we expect 
+to achieve higher statistics and therefore we reduced the expected systematics 
+to 3$\%$.
+   
+The beam polarization will be measured during the experiment by the Hall B 
+M\o{}ller polarimeter. This polarimeter measures the angular distribution of 
+the M\o{}ller electrons to obtain the beam polarization. The precision of the 
+Hall B M\o{}ller polarimeter was measured to be around 3.5$\%$ 
+\cite{PhysRevSTAB.7.042802}, which is expected to be improved with the upgrade.  
+We assume therefore a 3.5$\%$ systematic uncertainty on the measured 
+asymmetries similar to what was achieved during 6 GeV run.
+
+A total systematic contributions is estimated to be around 11\%. To be 
+extremely conservative in showing our projections' precision, a total of 20\% 
+systematic uncertainty will be added quadratically to the statistical error 
+bars in each bin of the reconstructed asymmetry.
+
 \section{Projections}
-\subsection{Semi-exclusive selection}
-RD to MH: I can help with the conclusions, but you will need to provide first more 
-context of the figures. 
+Once the final state particles being reconstructed and identified after passing 
+all the physics and the geometry cuts. We reconstruct we types of neutron DVCS 
+events as listed at the beginning of this chapter. Based on the approved  Run 
+Group F electron-nucleon running luminosity, a total of 9 million tagged and 
+850K fully exclusive neutron DVCS events will be collected during the 35 PAC 
+days. In the following two subsections, we present our proposed binning for 
+each set of data selection and the projections of the proposed measured 
+beam-spin asymmetries.  
+
+
+
+\subsection{Tagged n-DVCS Projections}
+After identifying the Tagged-neutron DVCS events, i.e., having only one 
+electron, one photon, and one proton in the final state, we further filter them 
+by imposing the energy-momentum conservation laws.  
+Figure~\ref{fig:tagged_exclusive} shows the missing mass squared distribution 
+of the identified tagged neutron DVCS events in addition to the missing energy 
+distribution of these events. We apply an additional cut on the reconstructed 
+missing mass squared to further clean the selected events as shown by the 
+vertical red-dashed lines. 
 
 \begin{figure}[htb]
   \centering
-    \includegraphics[width=0.55\textwidth,clip]{figs/pdf/t_x*.pdf}
-  \caption{Data binning in $x^{*}$ vs $-t$ space.
+    \includegraphics[width=0.95\textwidth,clip]{figs/all_inincoh_exc_cuts.pdf}
+  \caption{The distributions of the missing mass squared (left) and the missing 
+   energy (right) of the identified Tagged neutron DVCS events. The DVCS 
+   exclusivity cuts are represented by the vertical red-dashed lines. The black 
+   distributions represent the incoherent DVCS event candidates before the 
+   exclusivity cut. The shaded distributions represent the DVCS events that 
+   passed the cut on the missing mass squared.
+   \label{fig:tagged_exclusive}}
+\end{figure}
+
+The spectator approximation assumes that the recoil proton is on its mass shell 
+when the electron strikes the neutron and it gains neither energy nor momentum 
+in during the interaction. We can also evaluate the standard Lorentz invariant 
+$x$ in terms of the spectator kinematics. $x$ acquires a star to indicate  true 
+invariants rather than the values calculated assuming a stationary, on-shell 
+target:
+\begin{equation}
+   x^* = \frac{Q^2}{2M_{N}Ey (2-\alpha_s} = \frac{x_B}{2-\alpha_s}
+\end{equation} 
+
+Where $\alpha_s = \frac{E_s - p^{z}_{s}}{M_N}$, with $M_N$, $E_s$, and 
+$p^{z}_{s}$ are the on-shell mass, energy, and z-momentum component of the 
+spectator proton. 
+
+
+In order to study the effect of Fermi motion on our measured DVCS observable, 
+we specifically use the kinematics of the photons to determine the transferred 
+momentum squared $t$.  Figure~\ref{fig:binning_x_t} shows the distribution of 
+$Q^2$ as a function of $x^*$ and $x^*$ as a function of $t$ of the identified 
+tagged neutron DVCS events. On the right side plot of 
+figure~\ref{fig:binning_x_t} we show the proposed binning in $x^{*}$ versus 
+$-t$ space. The data will be binned three-dimensionally into 108 bins. That is, 
+12 bins in $x^{*}$ vs. $-t$, and then nine bins in the azimuthal angle ($\phi$) 
+for each of the 12 bins. The data are integrated over the full measured range 
+of $Q^2$.   
+   
+
+\begin{figure}[htb]
+  \centering
+    \includegraphics[width=0.45\textwidth,clip]{figs/pdf/Q2_x*.pdf}
+    \includegraphics[width=0.45\textwidth,clip]{figs/pdf/t_x*.pdf}
+   \caption{The distributions of the tagged neutron DVCS events in terms of 
+   $Q^2$ versus $x^*$ (left) and  $x^{*}$ versus $-t$ (right). On the right we 
+   show the binning we proposed in $x^{*}$ versus $-t$ space.
    \label{fig:binning_x_t}}
 \end{figure}
+
+
+Figure~\ref{fig:alu_tagged} presents the reconstructed tagged neutron DVCS  
+$A_{LU}$ as a function of $\phi$ in bins of $x^{*}$ vs $-t$.  
 
 \begin{figure}[htb]
   \centering
     \includegraphics[width=1.1\textwidth,clip]{figs/pdf/BSA_incoherent_Phi_x_t.pdf}
   \caption{Projected beam-spin asymmetries as a function of the hadronic angle 
-   $\phi_h$ in the binning of $x^{*}$ vs $-t$ space.
-   \label{fig:alu_semi}}
+   $\phi_h$ in the binning of $x^{*}$ vs $-t$ space. The error bars include 
+   both the statistical and the systematic uncertainties added quadratically.
+   \label{fig:alu_tagged}}
 \end{figure}
 
 
 
 
-\subsection{Semi-exclusive selection}
-RD for MH: Is this supposed to be Fully exclusive selection?
+\subsection{Fully exclusive n-DVCS projections}
 
 \begin{figure}[htb]
   \centering
@@ -209,8 +330,9 @@ RD for MH: Is this supposed to be Fully exclusive selection?
   \centering
     \includegraphics[width=1.1\textwidth,clip]{figs_epngamma/pdf/epngamma_BSA_incoherent_Phi.pdf}
   \caption{Projected beam-spin asymmetries as a function of the hadronic angle 
-   $\phi_h$ in the binning of $p_s$ vs $\theta_s$ space.
-   \label{fig:alu_semi}}
+   $\phi_h$ in the binning of $p_s$ vs $\theta_s$ space. The error bars include 
+   both the statistical and the systematic uncertainties added quadratically.
+   \label{fig:alu_exclusive}}
 \end{figure}
 
 
