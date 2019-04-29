@@ -27,7 +27,7 @@ aim of this proposal is enhance the neutron GPD measurements along the approved
 CLAS12 experiment E12-11-003, which will also measure the quasi-free neutron 
 DVCS by detecting the scattered neutron in deuterium.  
 
-In the fits of PDFs, \cite{Ball:2014uwa} for exemple, neutrino and deuterium data allow to make
+In the fits of PDFs, \cite{Ball:2014uwa} for example, neutrino and deuterium data allow to make
 a flavor dependent extraction, this option is not available for GPDs yet due to 
 the lack of reliable data. Indeed, the observables of DVCS, such as cross sections
 and beam-spin asymmetries are much smaller on neutron targets, while the nuclear
@@ -183,25 +183,15 @@ We plan on measuring the beam spin asymmetry as a function of $\phi$
 %
 where the arrows indicate the electron beam helicity. 
 
-\newpage
-
 \section{Measuring the neutron DVCS}
 
 \subsection{Two new methods for two objectives}
-
-\begin{figure}
-   \centering
-   \includegraphics[width=0.60\textwidth,,clip,trim=0mm 0mm 0mm 0mm 
-   ]{figures/dvcs_feynman-figure1.pdf}
-   \caption{\label{fig:ndvcsexclusive} Fully exclusive neutron DVCS diagram in 
-   deuterium. }
-\end{figure}
 
 As shown in Fig.~\ref{fig:ndvcsexclusive}, one can measure all the components of 
 the DVCS reaction on deuterium using CLAS and Bonus12. This method, while perfect 
 on the paper, leads to an efficiency problem
 as both the measurement of the spectator proton and of the neutrons are challenging
-and low efficiency (intrinsicly for the neutron and by the limitation of phase 
+and low efficiency (intrinsically for the neutron and by the limitation of phase 
 space available for the proton). However, it is possible to ensure the exclusivity
 of a process when missing one of the final state particles by applying cuts on
 missing mass, momentum and energy. This strategy can be used, either to leave the
@@ -210,8 +200,16 @@ E-12-11-003. We propose here to perform the other option, detecting the spectato
 but not the neutron, in order to increase the amount of available data, but most 
 importantly, to confirm the equivalency of both methods. Moreover, we will be able to
 perform the fully exclusive measurement, but with rather limited statistics. We
-intend to use this overconstrained last measurement to study the systematic effects 
+intend to use this over-constrained last measurement to study the systematic effects 
 linked to the nuclear target and the uncertainties in detection.
+
+\begin{figure}
+   \centering
+   \includegraphics[width=0.60\textwidth,,clip,trim=0mm 0mm 0mm 0mm 
+   ]{figures/dvcs_feynman-figure1.pdf}
+   \caption{\label{fig:ndvcsexclusive} Fully exclusive neutron DVCS diagram in 
+   deuterium. }
+\end{figure}
 
 \subsection{Tagged neutron DVCS with BONuS12}
 
@@ -238,41 +236,24 @@ an impact on both initial state and final state effects. In the initial state, t
 in fact not at rest and carries some Fermi momentum, which can be directly inferred from the
 kinematic of the spectator proton, thanks to the simple two body deuterium. On the final state side,
 detecting the spectator proton in a certain range of momentum and angle allows to significantly 
-reduce the probability of final state interactions to have occured.
+reduce the probability of final state interactions to have occurred.
 
-In conclusion, the measurement of this channel will offer a similar amount of data as other 
-CLAS12 measurements but with different systematic effects. In particular, reducing the impact
-of the least known nuclear effects.
+In order to resolve the initial state issue, we evaluate the standard Lorentz invariant 
+$x$ in terms of the spectator kinematics. $x$ acquires a star to indicate  true 
+invariants rather than the values calculated assuming a stationary, on-shell 
+target:
+\begin{equation}
+   x^* = \frac{Q^2}{2M_{N}Ey (2-\alpha_s} = \frac{x_B}{2-\alpha_s},
+\end{equation} 
+where $\alpha_s = \frac{E_s - p^{z}_{s}}{M_N}$, with $M_N$, $E_s$, and 
+$p^{z}_{s}$ are the on-shell mass, energy, and z-momentum component of the 
+spectator proton. 
 
-
-\subsection{Fully exclusive neutron DVCS with BONuS12}
-
-Goal: Understanding FSI with the comparisons (two here plus Silvia's)
-
-Why: Previous measurements are worrying, we need to validate the methods for more in the future.
-
-To understand the regions where FSIs are expected to be significant, we first 
-look at the deuteron. Consider the quasi-elastic scattering on a quasi-free 
-nucleon as shown in Figure\,\ref{fig:ndvcsexclusive}. Measurements of the  cross section as a 
-function of missing momentum are shown in 
-Figure\,\ref{fig:quasiElasticDeuteronFSI} along with model calculations in PWIA 
-with different final state interactions. From model calculations it was found 
-that the PWIA was insufficient for describing the data at missing momenta above 
-300 MeV/c.
-\begin{figure}
-   \centering
-   \includegraphics{figures/elastic_deuteron_FSI.pdf}
-   \caption{\label{fig:quasiElasticDeuteronFSI}Reduced quasi-elastic scattering 
-   cross section on deuteron~\cite{Jeschonnek:2008zg}. The reduced cross 
-   section includes a term multiplying the cross section by $M_d 
-   f_{\text{rec}}/(\sigma_{\text{Mott}} m_p m_n p_p)$, where the 
-   $f_{\text{rec}}$ is the recoil factor, and $\sigma_{\text{Mott}}$ is the 
-   Mott cross section.}
-\end{figure}
-Similarly, the size of the FSI strength as a function of spectator momentum 
-(left) and angle relative to the momentum transfer, $\theta_s$, (right) is 
-shown in 
-Figure~\ref{fig:deuteronFSI}~\cite{CiofidegliAtti:2003pb,CiofidegliAtti:2002as}.  
+To understand the regions where final state interactions are expected to be significant, we
+look at the spectator momentum 
+and angle relative to the momentum transfer, $\theta_s$. In 
+Fig.~\ref{fig:deuteronFSI}~\cite{CiofidegliAtti:2003pb,CiofidegliAtti:2002as}, we
+see calculations for the inclusive case.  
 At low recoil momentum and backwards spectator angle, the FSIs are negligible, 
 where at high momenta perpendicular to the momentum transfer, the FSIs are 
 maximized.
@@ -285,6 +266,27 @@ maximized.
    the spectator momentum (left) and spectator angle (right).}
 \end{figure}
 
+It is important to note that the detection of the neutron or the spectator proton are not equivalent.
+While it could appear to be so after applying the exclusivity cut, it is not the case because of the 
+large uncertainty (a percent or more) in the energy measurement of photons. This uncertainty is larger
+than the momentum of the spectator proton and therefore completely hinders our capability to reconstruct
+it, if it is not directly measured.
+In conclusion, the measurement of this channel will offer a similar amount of data as other 
+CLAS12 measurements but with different systematic effects. In particular, reducing the impact
+of the least known nuclear effects.
+
+\subsection{Fully exclusive neutron DVCS with BONuS12}
+
+As highlighted above, the fully exclusive measurement of neutron DVCS is plagued by
+two difficult particles to measure, a slow proton and a fast neutron. However, it can 
+still provide relevant information in a limited kinematic space. As this measurement is
+fully exclusive, it provides over-constraints by using missing mass, momentum and energy 
+cuts. This will give us a particularly clean sample of data with a minimal amount of 
+corrections to be applied and the bast control over systematic errors. We propose to use 
+this sample, that can only be obtained using a recoil detector, to study the effects 
+described above of Fermi motion, final state interactions and incomplete detection of the
+final state. This will confirm assumptions made in other neutron DVCS measurements and
+help understand better their systematic errors.
 
 
 

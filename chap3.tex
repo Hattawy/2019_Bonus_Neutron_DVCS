@@ -26,8 +26,10 @@ calculated with the Paris potential \cite{PhysRevC.21.861}.
 The output of the event generator was fed through CLAS12 official simulation 
 (GEMC 4.3.0)~\cite{clas12-gemc} and reconstruction (COATJAVA 
 5b.7.4)~\cite{clas12-coatjava} chain, to simulate the detectors' acceptance and 
-resolutions for all the final state particles, i.e., electrons, photons, 
-protons, and neutrons, within the proposed experimental setup of Run Group F.  
+resolutions for the following final state particles, electrons, photons, 
+and neutrons, within the proposed experimental setup of Run Group F. Spectator 
+protons are reconstructed with a fastMC that was developed based on the 
+performance of the eg6 CLAS run.
 
 \section{Particle Identification}
 
@@ -40,7 +42,7 @@ will be further filtered by imposing the energy-momentum conservation laws.
 
 For the identification of the different final state particle we use the 
 official CLAS12 Event-Builder~\cite{eventbuilder}. In the following subsections 
-we revisit the main requirement for the different particles. 
+we detail the main requirement for the different particles. 
 
 \subsection{Electron Identification} 
 For charged particles in the forward detectors, the Event Builder first assigns 
@@ -86,7 +88,7 @@ RTPC. As the RTPC is physically within the CLAS12 simulation, but the track
 reconstruction is not finalized yet within CLAS12 reconstruction, we refer to a 
 realistic fastmc the reproduces the expected performance of this detector. This 
 fastmc has be developed initially from the BONuS6 experiment and tuned very 
-precisely after EG6 experimenti \cite{eg6_note}, which have used very similar 
+precisely after EG6 experiment \cite{eg6_note}, which have used very similar 
 RTPCs.  This fastmc smears the proton's kinematics and applies acceptance 
 functions. Regarding the smearing, the momentum, polar angle, azimuthal angle, 
 and z-vertex of the protons are smeared with Gaussians using the observed 
@@ -135,8 +137,8 @@ distributions of the detected final state neutrons being detected in both the
 forward and the central detectors of CLAS12 spectrometer. As can be seen from 
 figures~\ref{fig:el_kin}, \ref{fig:proton_kin}, ~\ref{fig:photon_kin}, 
 ~\ref{fig:neutron_kin}, the DVCS electrons and photons are produced very 
-forward, which is in a total agreement with out DVCS measurements during the 
-6~GeV era of CLAS, while slow recoiling protons are almost emitted flat in the 
+forward, which is in a total agreement with our DVCS measurements during the 
+6~GeV era of CLAS, while slow recoiling protons are emitted more evenly in the 
 polar angle range within the acceptance of the BONuS12 RTPC. The final neutrons 
 are mostly emitted above $\theta$ = 40$^{\deg}$, which is outside the 
 acceptance of the forward detector of CLAS12 and was the main reason to upgrade 
@@ -220,18 +222,19 @@ The beam polarization will be measured during the experiment by the Hall B
 M\o{}ller polarimeter. This polarimeter measures the angular distribution of 
 the M\o{}ller electrons to obtain the beam polarization. The precision of the 
 Hall B M\o{}ller polarimeter was measured to be around 3.5$\%$ 
-\cite{PhysRevSTAB.7.042802}, which is expected to be improved with the upgrade.  
-We assume therefore a 3.5$\%$ systematic uncertainty on the measured 
+\cite{PhysRevSTAB.7.042802}.  
+We assume a 3.5$\%$ systematic uncertainty on the measured 
 asymmetries similar to what was achieved during 6 GeV run.
 
 A total systematic contributions is estimated to be around 11\%. To be 
-extremely conservative in showing our projections' precision, a total of 20\% 
-systematic uncertainty will be added quadratically to the statistical error 
+conservative, in particular because expected asymmetries on neutrons are
+much smaller than on protons, we used an increased total of 20\% 
+systematic uncertainty for our projections. This is added quadratically to the statistical error 
 bars in each bin of the reconstructed asymmetry.
 
 \section{Projections}
 Once the final state particles being reconstructed and identified after passing 
-all the physics and the geometry cuts. We reconstruct we types of neutron DVCS 
+all the physics and the geometry cuts. We reconstruct two types of neutron DVCS 
 events as listed at the beginning of this chapter. Based on the approved  Run 
 Group F electron-nucleon running luminosity, a total of 9 million tagged and 
 850K fully exclusive neutron DVCS events will be collected during the 35 PAC 
@@ -265,19 +268,7 @@ vertical red-dashed lines.
 
 The spectator approximation assumes that the recoil proton is on its mass shell 
 when the electron strikes the neutron and it gains neither energy nor momentum 
-in during the interaction. We can also evaluate the standard Lorentz invariant 
-$x$ in terms of the spectator kinematics. $x$ acquires a star to indicate  true 
-invariants rather than the values calculated assuming a stationary, on-shell 
-target:
-\begin{equation}
-   x^* = \frac{Q^2}{2M_{N}Ey (2-\alpha_s} = \frac{x_B}{2-\alpha_s}
-\end{equation} 
-
-Where $\alpha_s = \frac{E_s - p^{z}_{s}}{M_N}$, with $M_N$, $E_s$, and 
-$p^{z}_{s}$ are the on-shell mass, energy, and z-momentum component of the 
-spectator proton. 
-
-
+in during the interaction. 
 In order to study the effect of Fermi motion on our measured DVCS observable, 
 we specifically use the kinematics of the photons to determine the transferred 
 momentum squared $t$.  Figure~\ref{fig:binning_x_t} shows the distribution of 
