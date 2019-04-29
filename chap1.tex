@@ -38,7 +38,7 @@ a goal set by the E-12-11-003. However, the impact of the uncertain initial stat
 final state interactions on the integration of these data in global fits remain 
 unclear. With this proposal, we propose to both provide more data on the neutron,
 which is always important, but most importantly these data will have completely 
-independent systematic errors from the E-xxx data. That will make them complementary
+independent systematic errors from the E-12-11-003 data. That will make them complementary
 and indicate in what ways these methods are equivalent or potentially need {\it ad hoc}
 corrections.
 
@@ -50,15 +50,16 @@ error bars. Actually, recent extractions \cite{Dupre:2017hfs,Moutarde:2018kwr} s
 that we still barely have any constraint on $E$ using all the world proton 
 data.  However, as form factors often appear in the expressions of
 DVCS observables because of the Bethe Heitler process (see below) the situation 
-is very different for protons and neutrons. As the $F_1$ form factor of the 
-neutron is very small, the $E$ GPD is more prominent in some of the neutron DVCS 
-observables. Most notably the $\sin$ component of the beam spin asymmetry is given 
+is very different for protons and neutrons. Indeed, the $F_1$ form factor of the 
+neutron is very small, making the $E$ GPD more prominent in some of the neutron DVCS 
+observables. Most notably the $\sin$ component of the beam spin asymmetry 
+(see Eq. \ref{eq:sin} below for details) is given 
 by~\cite{dHose:2016mda}:
 \begin{equation}
 s^\textrm{I}_{1,\textrm{unp}} \propto \Im m \left [ 
 F_1 \mathcal{H} + \xi(F_1 + F_2) \mathcal{\tilde H} - \frac{t}{4M^2} F_2  \mathcal{E} \right ],
 \end{equation}
-highlighting the effect of a suppressed $F_1$ on the main terms.
+highlighting the effect of a suppressed $F_1$ on the main term.
 This lead to the idea that neutron DVCS will also help significantly to constrain the 
 GPD $E$. This goal is of course driven by the long standing objective of GPD physics to
 measure the Ji sum rule in the nucleon:
@@ -79,7 +80,7 @@ The cross section for DVCS on a spin-1/2 target can be parameterized in terms
 of four helicity conserving GPDs: $H^q$, $E^q$, $\tilde{H}^q$, and 
 $\tilde{E}^q$. The GPDs $H$, $E$, $\widetilde{H}$ and $\widetilde{E}$ are 
 defined for each quark flavor (q = u, d, s, ... ). Analogous GPDs exist for the 
-gluons, see references \cite{PhysRevLett.78.610,PhysRevD.56.5524,Goeke:2001tz} for details.  In 
+gluons, see references \cite{Ji:1996ek,PhysRevD.56.5524,Goeke:2001tz} for details.  In 
 this work, we are mostly concerned by the valence quark region, in which the 
 sea quarks and the gluons contributions do not dominate the DVCS scattering 
 amplitude. The GPDs $H$ and $\widetilde{H}$ conserve the spin of the nucleon, 
@@ -99,7 +100,7 @@ orientations of the quarks' helicities.
 
 The differential cross section of leptoproduction of photons for a 
 longitudinally-polarized electron beam and an unpolarized nucleon target can 
-written as:
+be written as:
 \begin{equation}
 \frac{d\sigma}{dx_B\,dy\,dt\,d\phi\,d\varphi} = \frac{\alpha^3 x_B y}{16 \pi^2 
    Q^2 \sqrt{1+\epsilon^2}} \left| \frac{\mathcal{T}}{e^3} \right|^2
@@ -111,16 +112,9 @@ $\varphi$ is the scattered electron's azimuthal angle, $Q^2= -q_1^2$, and
 $q_1=k_1-k_2$. The particle momentum definitions are shown in 
 Figure~\ref{fig:dvcshandbag}. The momentum transfer where the nucleon is 
 initially at rest, $\Delta = p_1-p_2$ and $t=\Delta^2$. The Bjorken variable  
-is related to the scaling variable by
-%
+is related to another scaling variable called skewedness:
 \begin{equation}
-   x_{\text{B}} = \frac{Q^2}{2 M_N E\,y}
-\end{equation}
-%
-where $M_N$ is the nucleon mass and $E$ is the beam energy. Another scaling variable called skewedness is
-%
-\begin{equation}
-\xi = \frac{x_B}{2 - x_B} + \mathcal{O}(1/Q^2)
+\xi = \frac{x_B}{2 - x_B} + \mathcal{O}(1/Q^2).
 \end{equation}
 
 The amplitude is the sum of the DVCS, the Bethe-Heitler (BH), and the 
@@ -159,6 +153,7 @@ c_0^{\text{DVCS}} + \sum_{n=1}^{2}\left[ c_n^{\text{DVCS}}\cos(n\phi)
    \mathcal{P}_1(\phi)\mathcal{P}_2(\phi)}\left\{ c_0^{\mathcal{I}} + 
    \sum_{n=1}^{3}\left[ c_n^{\mathcal{I}}\cos(n\phi) 
 +s_n^{\mathcal{I}}\cos(n\phi) \right] \right\}
+	\label{eq:sin}
 \end{align}
 %
 The functions $c_0$, $c_n$, and $s_n$ are called \emph{Fourier coefficients} 
@@ -192,20 +187,26 @@ where the arrows indicate the electron beam helicity.
 
 \section{Measuring the neutron DVCS}
 
-RD to write this section (might not be fully finished by Tuesday)
-
 \subsection{Two new methods for two objectives}
 
-As shown in Fig.~\ref{}, one can measure all the components of the DVCS reaction 
-on deuterium using CLAS and Bonus12. This method, while perfect on the paper, 
-leads to an efficiency problem
+\begin{figure}
+   \centering
+   \includegraphics[width=0.60\textwidth,,clip,trim=0mm 0mm 0mm 0mm 
+   ]{figures/dvcs_feynman-figure1.pdf}
+   \caption{\label{fig:ndvcsexclusive} Fully exclusive neutron DVCS diagram in 
+   deuterium. }
+\end{figure}
+
+As shown in Fig.~\ref{fig:ndvcsexclusive}, one can measure all the components of 
+the DVCS reaction on deuterium using CLAS and Bonus12. This method, while perfect 
+on the paper, leads to an efficiency problem
 as both the measurement of the spectator proton and of the neutrons are challenging
 and low efficiency (intrinsicly for the neutron and by the limitation of phase 
 space available for the proton). However, it is possible to ensure the exclusivity
 of a process when missing one of the final state particles by applying cuts on
 missing mass, momentum and energy. This strategy can be used, either to leave the
 spectator proton or the neutron undetected. The former, being used in the ongoing
-E-xxx. We propose here to perform the other options, detecting the spectator proton
+E-12-11-003. We propose here to perform the other option, detecting the spectator proton
 but not the neutron, in order to increase the amount of available data, but most 
 importantly, to confirm the equivalency of both methods. Moreover, we will be able to
 perform the fully exclusive measurement, but with rather limited statistics. We
@@ -214,9 +215,12 @@ linked to the nuclear target and the uncertainties in detection.
 
 \subsection{Tagged neutron DVCS with BONuS12}
 
-Goal: adding data with the semi-exclusive
-
-Why: different systematics for almost equivalent expected statistics
+The tagged neutron detection scheme is described in Fig.~\ref{fig:ndvcstagged}, where we see
+that a detector for low energy proton spectators is necessary. Here, we propose to use the 
+Bonus radial TPC, which is designed to make a similar type of measurement for inclusive 
+deeply inelastic scattering. The first goal of the present proposed experiment is simply
+to provide more data in the field of neutron GPD. Indeed, the measurement of neutron
+DVCS is very challenging and very little published data is available at this point. 
 
 \begin{figure}
    \centering
@@ -226,6 +230,19 @@ Why: different systematics for almost equivalent expected statistics
    }
 \end{figure}
 
+Second, we observe that the systematics from this measurement are going to be mostly 
+independent of the ones from E-12-11-003. Indeed, while this measurement will be missing one 
+of the high energy product of the reaction leading to more uncertainty in exclusivity cuts,
+it will detect the spectator proton, significantly help with nuclear effects. This has interestingly
+an impact on both initial state and final state effects. In the initial state, the neutron is
+in fact not at rest and carries some Fermi momentum, which can be directly inferred from the
+kinematic of the spectator proton, thanks to the simple two body deuterium. On the final state side,
+detecting the spectator proton in a certain range of momentum and angle allows to significantly 
+reduce the probability of final state interactions to have occured.
+
+In conclusion, the measurement of this channel will offer a similar amount of data as other 
+CLAS12 measurements but with different systematic effects. In particular, reducing the impact
+of the least known nuclear effects.
 
 
 \subsection{Fully exclusive neutron DVCS with BONuS12}
@@ -233,14 +250,6 @@ Why: different systematics for almost equivalent expected statistics
 Goal: Understanding FSI with the comparisons (two here plus Silvia's)
 
 Why: Previous measurements are worrying, we need to validate the methods for more in the future.
-
-\begin{figure}
-   \centering
-   \includegraphics[width=0.60\textwidth,,clip,trim=0mm 0mm 0mm 0mm 
-   ]{figures/dvcs_feynman-figure1.pdf}
-   \caption{\label{fig:ndvcsexclusive} Fully exclusive neutron DVCS diagram in 
-   deuterium. }
-\end{figure}
 
 To understand the regions where FSIs are expected to be significant, we first 
 look at the deuteron. Consider the quasi-elastic scattering on a quasi-free 
