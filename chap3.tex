@@ -1,7 +1,7 @@
 \chapter{Projections for the Proposed Measurements}
 \label{chap:reach}
-In this work we propose to measure the neutron's DVCS beam-spin asymmetry in 
-the following two channels:
+We propose to measure the neutron's DVCS beam-spin asymmetry in the following 
+two channels:
 \begin{enumerate}
    \item Tagged n-DVCS: $D\,+\,\gamma^{*}  \longrightarrow 
       \gamma\,+\,(n)\,+\,p$
@@ -11,8 +11,8 @@ the following two channels:
 
 To demonstrate the experimental feasibility and to extract projections for our 
 proposed measurements, we present here a simulation study using a realistic 
-n-DVCS event generator and the official simulation-reconstruction chain of 
-CLAS12 spectrometer upgraded with BONuS12 RTPC. 
+n-DVCS event generator and the official simulation-reconstruction chain of the 
+CLAS12 spectrometer augmented with BONuS12 RTPC. 
 
 
 \section{Monte-Carlo Simulation}
@@ -23,11 +23,11 @@ while the GPDs have been taken from the VGG model
 \cite{PhysRevD.60.094017,Guidal:2004nd}. The Fermi-motion distribution is 
 calculated with the Paris potential \cite{PhysRevC.21.861}.
 
-The output of the event generator was fed through CLAS12 official simulation 
-(GEMC 4.3.0)~\cite{clas12-gemc} and reconstruction (COATJAVA 
+The output of the event generator was fed through the  CLAS12 official 
+simulation (GEMC 4.3.0)~\cite{clas12-gemc} and reconstruction (COATJAVA 
 5b.7.4)~\cite{clas12-coatjava} chain, to simulate the detectors' acceptance and 
-resolutions for the following final state particles, electrons, photons, 
-and neutrons, within the proposed experimental setup of Run Group F. Spectator 
+resolutions for the following final state particles, electrons, photons, and 
+neutrons, within the proposed experimental setup of Run Group F. Spectator 
 protons are reconstructed with a fastMC that was developed based on the 
 performance of the eg6 CLAS run.
 
@@ -86,19 +86,19 @@ function of $\theta$.
 The slow recoiling final state protons will be detected within the BONuS12 
 RTPC. As the RTPC is physically within the CLAS12 simulation, but the track 
 reconstruction is not finalized yet within CLAS12 reconstruction, we refer to a 
-realistic fastmc the reproduces the expected performance of this detector. This 
-fastmc has be developed initially from the BONuS6 experiment and tuned very 
+realistic fastmc that reproduces the expected performance of this detector.  
+This fastmc has be developed from the BONuS6 experiment and tuned very 
 precisely after EG6 experiment \cite{eg6_note}, which have used very similar 
-RTPCs.  This fastmc smears the proton's kinematics and applies acceptance 
+RTPCs. The geometry parameters in this fastmc have been updated with BONuS12's 
+geometry. This fastmc smears the proton's kinematics and applies acceptance 
 functions. Regarding the smearing, the momentum, polar angle, azimuthal angle, 
 and z-vertex of the protons are smeared with Gaussians using the observed 
 tracking resolutions of the RTPC (see chapter 2, section 3 in \cite{eg6_note}).  
 For the acceptance, the fastmc:
 \begin{itemize}
    \item ensures that the proton's track intersects with the cathode.
-   \item removes the tracks which pass in the dead area between the two modules 
-      of the RTPC.
-\item rejects the track if it goes to the upstream end of the target's holder.
+\item rejects the track if it goes to the upstream or the downstream detector 
+   windows.
 \item applies the RTPC's thresholds on the momentum and the polar angle.
 \end{itemize} 
 We do not specifically apply energy loss and multiple scattering in our fastmc, 
@@ -176,15 +176,16 @@ neutron DVCS semi-exclusively (E12-11-003).
 \section{Beam-Spin Asymmetry}
 
 The beam spin asymmetry of a longitudinally polarized electron beam on an 
-unpolarized target ($A_{LU}$) in each bin of the 108 total bins is defined as:
+unpolarized target ($A_{LU}$) is defined as:
 %
 \begin{equation}
   A_{LU} = \frac{1}{P_{B}} \frac{N^{+} - N^{-}}{N^{+} + N^{-} }.
 \end{equation}
 %
 where $P_{B}$ is the beam polarization, and $N^{+}$ and $N^{-}$ are the number 
-of events detected with positive and negative electron helicity, respectively.  
-The statistical uncertainty of $A_{LU}$ is
+of events detected with positive and negative electron helicity, respectively, 
+normalized to the life-time gated Faraday cup charge for each helicity. The 
+statistical uncertainty of $A_{LU}$ is
 %
 \begin{equation}
   \sigma_{A_{LU}} = \frac{1}{P_{B}} \sqrt{ \frac{1 - (P_{B}A_{LU})^{2}}{N}}
@@ -212,35 +213,34 @@ improvement we expect with BONuS12 RTPC in terms of resolutions, we expect this
 uncertainty to be reduced to 4$\%$.
 
 Regarding the sensitivity of the fit results to our binning, the eg6 data were 
-binned into two different bins in $\phi$ and the reconstructed asymmetries were 
-compared. The associated systematic uncertainty for $A_{LU}$ at $\phi = 90 
-^{\circ}$ was found to be of 7.1$\%$. For the proposed measurements, we expect 
-to achieve higher statistics and therefore we reduced the expected systematics 
-to 3$\%$.
+binned into two different bin sizes in $\phi$ and the reconstructed asymmetries 
+were compared. The associated systematic uncertainty for $A_{LU}$ at $\phi = 90 
+^{\circ}$ was found to be 7.1$\%$. For the proposed measurements, we expect to 
+achieve higher statistics and smaller bin sizes, and therefore we reduced the 
+expected systematics to 3$\%$.
    
 The beam polarization will be measured during the experiment by the Hall B 
-M\o{}ller polarimeter. This polarimeter measures the angular distribution of 
-the M\o{}ller electrons to obtain the beam polarization. The precision of the 
+M\o{}ller polarimeter. This polarimeter measures the helicity dependence of the 
+M\o{}ller electron yield to obtain the beam polarization. The precision of the 
 Hall B M\o{}ller polarimeter was measured to be around 3.5$\%$ 
-\cite{PhysRevSTAB.7.042802}.  
-We assume a 3.5$\%$ systematic uncertainty on the measured 
-asymmetries similar to what was achieved during 6 GeV run.
+\cite{PhysRevSTAB.7.042802}.  We assume a 3.5$\%$ systematic uncertainty on the 
+measured asymmetries similar to what was achieved during the 6 GeV run.
 
-A total systematic contributions is estimated to be around 11\%. To be 
+The total systematic uncertainty is estimated to be around 11\%. To be 
 conservative, in particular because expected asymmetries on neutrons are
 much smaller than on protons, we used an increased total of 20\% 
 systematic uncertainty for our projections. This is added quadratically to the statistical error 
 bars in each bin of the reconstructed asymmetry.
 
 \section{Projections}
-Once the final state particles being reconstructed and identified after passing 
-all the physics and the geometry cuts. We reconstruct two types of neutron DVCS 
-events as listed at the beginning of this chapter. Based on the approved  Run 
-Group F electron-nucleon running luminosity, a total of 9 million tagged and 
-850K fully exclusive neutron DVCS events will be collected during the 35 PAC 
-days. In the following two subsections, we present our proposed binning for 
-each set of data selection and the projections of the proposed measured 
-beam-spin asymmetries.  
+Once the final state particles have been reconstructed and identified after 
+passing all the physics and the geometry cuts, we reconstruct two types of 
+neutron DVCS events as listed at the beginning of this chapter. Based on the 
+approved  Run Group F electron-nucleon running luminosity, a total of 9 million 
+tagged and 850K fully exclusive neutron DVCS events will be collected during 
+the 35 PAC days. In the following two subsections, we present our proposed 
+binning for each set of data selection and the projections of the proposed 
+measured beam-spin asymmetries.  
 
 
 
@@ -268,12 +268,11 @@ vertical red-dashed lines.
 
 The spectator approximation assumes that the recoil proton is on its mass shell 
 when the electron strikes the neutron and it gains neither energy nor momentum 
-in during the interaction. 
-In order to study the effect of Fermi motion on our measured DVCS observable, 
-we specifically use the kinematics of the photons to determine the transferred 
-momentum squared $t$.  Figure~\ref{fig:binning_x_t} shows the distribution of 
-$Q^2$ as a function of $x^*$ and $x^*$ as a function of $t$ of the identified 
-tagged neutron DVCS events. On the right side plot of 
+during the interaction. In order to study the effect of Fermi motion on our 
+measured DVCS observable, we specifically use the kinematics of the photons to 
+determine the transferred momentum squared $t$.  Figure~\ref{fig:binning_x_t} 
+shows the distribution of $Q^2$ as a function of $x^*$ and $x^*$ as a function 
+of $t$ of the identified tagged neutron DVCS events. On the right side plot of 
 figure~\ref{fig:binning_x_t} we show the proposed binning in $x^{*}$ versus 
 $-t$ space. The data will be binned three-dimensionally into 108 bins. That is, 
 12 bins in $x^{*}$ vs. $-t$, and then nine bins in the azimuthal angle ($\phi$) 
@@ -287,7 +286,7 @@ of $Q^2$.
     \includegraphics[width=0.45\textwidth,clip]{figs/pdf/t_x*.pdf}
    \caption{The distributions of the tagged neutron DVCS events in terms of 
    $Q^2$ versus $x^*$ (left) and  $x^{*}$ versus $-t$ (right). On the right we 
-   show the binning we proposed in $x^{*}$ versus $-t$ space.
+   show the binning we propose in $x^{*}$ versus $-t$ space.
    \label{fig:binning_x_t}}
 \end{figure}
 
@@ -299,7 +298,7 @@ $A_{LU}$ as a function of $\phi$ in bins of $x^{*}$ vs $-t$.
   \centering
     \includegraphics[width=1.1\textwidth,clip]{figs/pdf/BSA_incoherent_Phi_x_t.pdf}
   \caption{Projected beam-spin asymmetries as a function of the hadronic angle 
-   $\phi_h$ in the binning of $x^{*}$ vs $-t$ space. The error bars include 
+   $\phi_h$ in the 12 bins in $x^{*}$ vs $-t$ space. The error bars include 
    both the statistical and the systematic uncertainties added quadratically.
    \label{fig:alu_tagged}}
 \end{figure}
@@ -308,20 +307,19 @@ $A_{LU}$ as a function of $\phi$ in bins of $x^{*}$ vs $-t$.
 
 
 \subsection{Fully exclusive n-DVCS projections}
-Our aim of this measurement is to investigate the Fermi motion and the final 
-state interaction (FSI) effects on the measured neutron DVCS beam-spin 
-asymmetry. This can be achieved by comparing the measured tagged neutron DVCS 
-beam-spin asymmetry, that is by measuring $d(e,e'p_s\gamma)X$, to the measured 
-full exclusive neutron DVCS channel, that is by measuring $d(e,e'np_s\gamma)$.  
-The selection of the tagged DVCS events have been presented in the previous 
-subsection, while different way of binning the data will be constructed as will 
-be shown in this section. 
+Our aim is to investigate the Fermi motion and the final state interaction 
+(FSI) effects on the measured neutron DVCS beam-spin asymmetry.  This can be 
+achieved by comparing the measured tagged neutron DVCS beam-spin asymmetry, 
+that is $d(e,e'p_s\gamma)X$, to the measured full exclusive neutron DVCS 
+channel, that is $d(e,e'np_s\gamma)$.  The selection of the tagged DVCS events 
+have been presented in the previous subsection, although a different way of 
+binning the data will be used here, as will be shown in this section. 
 
 Regarding the fully exclusive neutron DVCS events selection, events with the 
-four final state particles being identified after applying all the geometry and 
-physics cuts on the individual final state particle. After identifying these 
-events, the exclusivity of the DVCS events is ensured by imposing a set of 
-constraints based on the four-momentum conservation in the reaction 
+four final state particles will be identified after applying all the geometry 
+and physics cuts on the individual final state particle. After identifying 
+these events, the exclusivity of the DVCS events is ensured by imposing a set 
+of constraints based on the four-momentum conservation in the reaction 
 $ed\rightarrow e'p_{s}n\gamma$.  The distributions for the exclusive variables 
 are shown in figure~\ref{fig:fully_exclusive}.
 
