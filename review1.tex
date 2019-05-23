@@ -88,9 +88,8 @@ proposal. Detailed comments and text corrections in the following section.
 
  \item Do Moller electrons represent an issue for the tracking performance? 
 
- {\color{red} Assuming, this is regarding tracking in the RTPC, the answer is 
-        no. The electrons do not leave a track in the RTPC due to the low gain 
-        at which it is setup.}
+ {\color{red} Again, since we run with 30\% of RG-A/B luminosity, the Moller 
+        backgrounds are much reduced in RG-F.}
 
  \item It is not explained why the solenoid will be set at 5 Tesla. Since this 
     proposal aims at measuring the low-momentum spectator proton, one would 
@@ -113,33 +112,35 @@ proposal. Detailed comments and text corrections in the following section.
    smoothen the fact that the tracking is not yet included in the CLAS12 
    framework and to give an estimate on when it will be.
  
-{\color{red} The observed track reconstructed momentum resolution is better 
-than 10\% at 100 MeV/c momentum. The resolution of the RTPC has very little 
-impact on the FSI results because cuts are very wide. For Fermi motion, a 
-better resolution is always an improvement, but with varied effectiveness. At 
-some point resolution improvement has very little impact on errors dominated by 
-other factors. Regarding the BONuS12 RTPC track reconstruction, it is finalized 
-on a standalone version of COATJAVA and got accepted by the CLAS12 software 
-group, while we are going through a cleaning phase to put it in a better shape 
-to be included with the official CLAS12 framework.}
+{\color{red} As stated previously, this is a run group addition proposal using 
+the same experimental setup of the approved BONuS12 proposal. The observed 
+track reconstructed momentum resolution is better than 10\% at 100 MeV/c 
+momentum. The resolution of the RTPC has very little impact on the FSI results 
+because cuts are very wide. For Fermi motion, a better resolution is always an 
+improvement, but with varied effectiveness. At some point resolution 
+improvement has very little impact on errors dominated by other factors.  
+Regarding the BONuS12 RTPC track reconstruction, it is finalized on a 
+standalone version of COATJAVA and got accepted by the CLAS12 software group, 
+while we are going through a cleaning phase to include it with the official 
+CLAS12 framework.}
 
 \item In the experimental setup, there is no mention of the Forward Tagger.  
    Did you consider including it? Given that RG-B is running with FT, what will 
    be the impact on the comparison between the two experiments of not including 
    the FT?
-{\color{red} Indeed a significant portion of the phase space is cut by the 
-absence of the FT. We feel that it is not a critical issue for comparisons with 
+{\color{red} Indeed some portion of the phase space is cut by the absence of 
+the FT. We feel that it is not a critical issue for comparisons with 
 E12-11-003, we can do it only in part of the phase space and still obtain
 a meaningful comparison. On the other side, including the FT would increase the 
-background in BONuS12 neutron DIS measurement and cause changes on the beam 
-line that we did not want to ask from the run group as it would imply to 
-reassess things validated by their ERR.}
+background in BONuS12 and cause changes on the beam line that we did not want 
+to ask from the run group as it would imply to reassess things validated by 
+their ERR.}
 
 \item There is no mention of trigger requirements for this measurement. Will 
    you use the same trigger as the BONuS12? Is it just an electron trigger with 
    certain electron momentum range? Please specify.
   
-{\color{red} Yes we will use the same trigger as in RG-B and BONUS12, that is 
+{\color{red} Yes, we will use the same trigger as in RG-B and BONUS12, that is 
 an electron in Forward Tracker with road matching.}
 
 \item Systematic uncertainties.  \begin{itemize}
@@ -147,12 +148,13 @@ an electron in Forward Tracker with road matching.}
    the asymmetry ratio''. This is true only if the data taking conditions do 
       not change in time, i.e. all the runs considered have very similar 
       conditions.\\
-{\color{red} True. We minimize the effects of these changes on the reconstructed
-events by selecting the good runs list. To this aim, in such analysis we 
-      monitor the ratio of the number of the good tracks reconstructed in the 
-      RTPC to number of the detected good electrons in CLAS as a function of 
-      run number. More details can be found in reference ~\cite{eg6_note}, 
-      section 4.1.1 and 4.2.1. }
+{\color{red}Since the asymmetry is with respect to the beam helicity, which 
+      changes rapidly, this will not be a conceren. Further more, we will 
+      select the good runs list.  To this aim, in such analysis we monitor the 
+      ratio of the number of the good tracks reconstructed in the RTPC to 
+      number of the detected good electrons in CLAS as a function of run 
+      number. More details can be found in reference ~\cite{eg6_note}, section 
+      4.1.1 and 4.2.1. }
 
  \item There is a mention of non exclusive $\pi^0$ background. What do you mean 
     by ``non exclusive''? What about the exclusive production of $\pi^0$ with 
@@ -326,7 +328,8 @@ to the momentum transfer, FSIs are maximized'' \\
   sector. Most of charged particle identification doesn't use LTCC. You might 
   skip LTCC, or otherwise if for completeness you want to include it, then you 
   might want to add RICH as well.\\
-     {\color{red} Skipped here.}
+     {\color{red} Skipped as the fact that BONuS does not request LTCC nor does 
+     this proposal.}
 
 
 \item In the summary page, ``\textit{ The first channel will enrich our 
@@ -337,13 +340,13 @@ to the momentum transfer, FSIs are maximized'' \\
 - It was not clear how exactly you are going to learn more about FSI and Fermi 
   motions with proposed measurements. See also the General remarks.\\
 
-     {\color{red} As cleared previously, we intend to extact results to be 
-     compared to the theoretical models. For instance, comparing the 
+     {\color{red} As explained previously, we intend to extact results to be 
+     compared to the theoretical models. For instance, we will compare the 
      theta-distribution of spectator protons for fully identified DVCS events 
      for 2 different momentum bins - e.g. 70-100 MeV/c and 100-150 MeV/c (there 
      are many papers showing the effect of FSI in the original BONuS12 and 
      DEEPS data in these momentum bins - e.g.  
-     \url{https://journals.aps.org/prc/pdf/10.1103/PhysRevC.93.055205}.}
+     \url{https://journals.aps.org/prc/pdf/10.1103/PhysRevC.93.055205}).}
 
 \end{itemize}
  
