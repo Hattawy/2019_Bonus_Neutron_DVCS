@@ -3,7 +3,7 @@
 We propose to measure the neutron's DVCS beam-spin asymmetry in the following 
 two channels:
 \begin{enumerate}
-   \item Tagged n-DVCS: $D\,+\,\gamma^{*}  \longrightarrow 
+   \item Proton-tagged neutron DVCS: $D\,+\,\gamma^{*}  \longrightarrow 
       \gamma\,+\,(n)\,+\,p$
    \item Fully exclusive n-DVCS: $D\,+\,\gamma^{*}  \longrightarrow \gamma\,+\, 
       n \,+\,p$
@@ -33,12 +33,13 @@ performance of the eg6 CLAS run.
 
 \section{Particle Identification}
 
-The final state of neutron Tagged-DVCS event consists of three particles: an 
-electron, a proton, and a real photon, while in addition to these particles a 
-neutron is required to be detected in the fully exclusive neutron's DVCS 
-events. To identify the DVCS events, we first identify the different particles 
-of interest. Then, events with three and four detected final-state particles 
-will be further filtered by imposing the energy-momentum conservation laws.
+The final state of proton-tagged neutron DVCS event consists of three 
+particles: an electron, a proton, and a real photon, while in addition to these 
+particles a neutron is required to be detected in the fully exclusive neutron's 
+DVCS events. To identify the DVCS events, we first identify the different 
+particles of interest. Then, events with three and four detected final-state 
+particles will be further filtered by imposing the energy-momentum conservation 
+laws.
 
 For the identification of the different final state particle we use the 
 official CLAS12 Event-Builder~\cite{eventbuilder}. In the following subsections 
@@ -200,7 +201,7 @@ normalization and efficiencies that appear in the cross sections cancel out in
 the asymmetry ratio. However, some systematic uncertainties remain and they 
 still contribute to the measured $A_{LU}$. The main known sources of systematic 
 uncertainties are: the DVCS selection cuts, the fitting sensitivity to our 
-binning, the beam polarization and the background (non exclusive $\pi^0$) 
+binning, the beam polarization and the background (exclusive $\pi^0$) 
 acceptance ratio. In the following, we present estimates of the contribution 
 from each source based on our prior knowledge during CLAS-eg6 DVCS analysis 
 \cite{eg6_note}.
@@ -259,21 +260,21 @@ measured beam-spin asymmetries.
 
 
 
-\subsection{Tagged n-DVCS Projections}
-After identifying the Tagged-neutron DVCS events, i.e., having only one 
+\subsection{Proton-Tagged neutron DVCS Projections}
+After identifying the proton-tagged neutron DVCS events, i.e., having only one 
 electron, one photon, and one proton in the final state, we further filter them 
 by imposing the energy-momentum conservation laws.  
 Figure~\ref{fig:tagged_exclusive} shows the missing mass squared distribution 
-of the identified tagged neutron DVCS events in addition to the missing energy 
-distribution of these events. We apply an additional cut on the reconstructed 
-missing mass squared to further clean the selected events as shown by the 
-vertical red-dashed lines. 
+of the identified proton-tagged neutron DVCS events in addition to the missing 
+energy distribution of these events. We apply an additional cut on the 
+reconstructed missing mass squared to further clean the selected events as 
+shown by the vertical red-dashed lines. 
 
 \begin{figure}[htb]
   \centering
     \includegraphics[width=0.95\textwidth,clip]{figs/all_inincoh_exc_cuts.pdf}
   \caption{The distributions of the missing mass squared (left) and the missing 
-   energy (right) of the identified Tagged neutron DVCS events. The DVCS 
+   energy (right) of the identified proton-tagged neutron DVCS events. The DVCS 
    exclusivity cuts are represented by the vertical red-dashed lines. The black 
    distributions represent the incoherent DVCS event candidates before the 
    exclusivity cut. The shaded distributions represent the DVCS events that 
@@ -287,27 +288,27 @@ during the interaction. In order to study the effect of Fermi motion on our
 measured DVCS observable, we specifically use the kinematics of the photons to 
 determine the transferred momentum squared $t$.  Figure~\ref{fig:binning_x_t} 
 shows the distribution of $Q^2$ as a function of $x^*$ and $x^*$ as a function 
-of $t$ of the identified tagged neutron DVCS events. On the right side plot of 
-figure~\ref{fig:binning_x_t} we show the proposed binning in $x^{*}$ versus 
-$-t$ space. The data will be binned three-dimensionally into 108 bins. That is, 
-12 bins in $x^{*}$ vs. $-t$, and then nine bins in the azimuthal angle ($\phi$) 
-for each of the 12 bins. The data are integrated over the full measured range 
-of $Q^2$.   
+of $t$ of the identified proton-tagged neutron DVCS events. On the right side 
+plot of figure~\ref{fig:binning_x_t} we show the proposed binning in $x^{*}$ 
+versus $-t$ space. The data will be binned three-dimensionally into 108 bins.  
+That is, 12 bins in $x^{*}$ vs. $-t$, and then nine bins in the azimuthal angle 
+($\phi$) for each of the 12 bins. The data are integrated over the full 
+measured range of $Q^2$.   
    
 
 \begin{figure}[htb]
   \centering
     \includegraphics[width=0.45\textwidth,clip]{figs/pdf/Q2_x*.pdf}
     \includegraphics[width=0.45\textwidth,clip]{figs/pdf/t_x*.pdf}
-   \caption{The distributions of the tagged neutron DVCS events in terms of 
-   $Q^2$ versus $x^*$ (left) and  $x^{*}$ versus $-t$ (right). On the right we 
-   show the binning we propose in $x^{*}$ versus $-t$ space.
+   \caption{The distributions of the proton-tagged neutron DVCS events in terms 
+   of $Q^2$ versus $x^*$ (left) and  $x^{*}$ versus $-t$ (right). On the right 
+   we show the binning we propose in $x^{*}$ versus $-t$ space.
    \label{fig:binning_x_t}}
 \end{figure}
 
 
-Figure~\ref{fig:alu_tagged} presents the reconstructed tagged neutron DVCS  
-$A_{LU}$ as a function of $\phi$ in bins of $x^{*}$ vs $-t$.  
+Figure~\ref{fig:alu_tagged} presents the reconstructed proton-tagged neutron 
+DVCS  $A_{LU}$ as a function of $\phi$ in bins of $x^{*}$ vs $-t$.  
 
 \begin{figure}[htb]
   \centering
@@ -324,11 +325,12 @@ $A_{LU}$ as a function of $\phi$ in bins of $x^{*}$ vs $-t$.
 \subsection{Fully exclusive n-DVCS projections}
 Our aim is to investigate the Fermi motion and the final state interaction 
 (FSI) effects on the measured neutron DVCS beam-spin asymmetry.  This can be 
-achieved by comparing the measured tagged neutron DVCS beam-spin asymmetry, 
-that is $d(e,e'p_s\gamma)X$, to the measured full exclusive neutron DVCS 
-channel, that is $d(e,e'np_s\gamma)$.  The selection of the tagged DVCS events 
-have been presented in the previous subsection, although a different way of 
-binning the data will be used here, as will be shown in this section. 
+achieved by comparing the measured proton-tagged neutron DVCS beam-spin 
+asymmetry, that is $d(e,e'p_s\gamma)X$, to the measured full exclusive neutron 
+DVCS channel, that is $d(e,e'np_s\gamma)$.  The selection of the proton-tagged 
+neutron DVCS events have been presented in the previous subsection, although a 
+different way of binning the data will be used here, as will be shown in this 
+section. 
 
 Regarding the fully exclusive neutron DVCS events selection, events with the 
 four final state particles will be identified after applying all the geometry 
@@ -355,31 +357,32 @@ are shown in figure~\ref{fig:fully_exclusive}.
 
 As mentioned previously, a total of 850K fully exclusive events will be 
 collected within the approved running luminosity and experimental setup of Run 
-Group F. Similarly to the tagged DVCS events, we use the kinematics of the 
-detected spectator proton to define the modified Lorentz invariant, $x^*$, and 
-we define the transferred momentum squared, $t$, using the photons to 
-investigate the initial Fermi motion effect on our DVCS observable of interest, 
-$A_{LU}$. Figure~\ref{fig:exclusive_binning_x_t} shows the distributions of  
-$Q^2$ as a function of  $x^*$ and  $x^{*}$ as a function of $-t$ for the 
-identified fully exclusive events. Before binning our data in the space of the 
-momentum and the polar angle of the detected spectator momentum, we apply an 
-initial cut on $x^{*}$ vs. $-t$, as can be seen in 
+Group F. Similarly to the proton-tagged neutron DVCS events, we use the 
+kinematics of the detected spectator proton to define the modified Lorentz 
+invariant, $x^*$, and we define the transferred momentum squared, $t$, using 
+the photons to investigate the initial Fermi motion effect on our DVCS 
+observable of interest, $A_{LU}$. Figure~\ref{fig:exclusive_binning_x_t} shows 
+the distributions of  $Q^2$ as a function of  $x^*$ and  $x^{*}$ as a function 
+of $-t$ for the identified fully exclusive events. Before binning our data in 
+the space of the momentum and the polar angle of the detected spectator 
+momentum, we apply an initial cut on $x^{*}$ vs. $-t$, as can be seen in 
 Figure~\ref{fig:exclusive_binning_x_t} which stands for the fully exclusive 
 detected n-DVCS events. Similar cut is applied on the $x^{*}$ vs. $-t$ space of 
-the tagged n-DVCS events. After that, both data sets are binned into 6 bins in 
-the momentum of the spectator proton and its polar angle as shown in 
-Figure~\ref{fig:ps_binning_x_t}. Finally, the data of each bin in $p_s$ versus
+the proton-tagged neutron DVCS events. After that, both data sets are binned 
+into 6 bins in the momentum of the spectator proton and its polar angle as 
+shown in Figure~\ref{fig:ps_binning_x_t}. Finally, the data of each bin in 
+$p_s$ versus
 $\theta_s$ is binned into 9 $\phi$ bins for the fully exclusive events and 12 
-$\phi$ bins for the tagged n-DVCS events. The reconstructed $A_{LU}$ is 
-presented in Figure~\ref{fig:alu_exclusive} as a function of the hadronic angle 
-$\phi$ for the tagged n-DVCS events in black points and for the fully exclusive 
-n-DVCS events in blue points. The error bars in these projections include both 
-statistical and systematic uncertainties. We are considering 20\% systematic 
-uncertainties in our projections here as well. As one can see from our 
-projections, the systematic uncertainties have the major contribution in the 
-precision of our asymmetries and even with the extremely conservative 
-assumption of 20\% consideration, we will observe very precise beam-spin 
-asymmetries.        
+$\phi$ bins for the proton-tagged neutron DVCS events. The reconstructed 
+$A_{LU}$ is presented in Figure~\ref{fig:alu_exclusive} as a function of the 
+hadronic angle $\phi$ for the proton-tagged neutron DVCS events in black points 
+and for the fully exclusive n-DVCS events in blue points. The error bars in 
+these projections include both statistical and systematic uncertainties. We are 
+considering 20\% systematic uncertainties in our projections here as well. As 
+one can see from our projections, the systematic uncertainties have the major 
+contribution in the precision of our asymmetries and even with the extremely 
+conservative assumption of 20\% consideration, we will observe very precise 
+beam-spin asymmetries.        
 
 \begin{figure}[htb]
   \centering
@@ -405,10 +408,10 @@ asymmetries.
   \centering
     \includegraphics[width=1.1\textwidth,clip]{figs_epngamma/pdf/epngamma_BSA_incoherent_Phi.pdf}
   \caption{Projected beam-spin asymmetries as a function of the hadronic angle 
-   $\phi_h$ in the binning of $p_s$ vs $\theta_s$ space for the tagged n-DVCS 
-   events in black points and for the fully exclusive n-DVCS events in blue 
-   points. The error bars include both the statistical and the systematic 
-   uncertainties added quadratically.
+   $\phi_h$ in the binning of $p_s$ vs $\theta_s$ space for the proton-tagged 
+   neutron DVCS events in black points and for the fully exclusive n-DVCS 
+   events in blue points. The error bars include both the statistical and the 
+   systematic uncertainties added quadratically.
    \label{fig:alu_exclusive}}
 \end{figure}
 
