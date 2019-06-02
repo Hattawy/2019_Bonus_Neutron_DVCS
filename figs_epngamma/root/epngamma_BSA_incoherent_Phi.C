@@ -1,5 +1,82 @@
+#include "Riostream.h"
+#include <iostream>
+#include <fstream>
+#include <TH2.h>
+#include <TStyle.h>
+#include <TCanvas.h>
+#include <math.h>
+#include <TH1D.h>
+#include <TH2D.h>
+#include <TF1.h>
+#include <TFile.h>
+#include <time.h>
+#include <TMultiGraph.h>
+#include <TVector3.h>
+#include <TMath.h>
+#include <TProfile.h>
+#include "TCutG.h"
+#include <TGraph.h>
+#include <TGraphErrors.h>
+#include "TGraph.h"
+#include <TLine.h>
+#include <TLorentzVector.h>
+#include "TSystem.h"
+#include "TColor.h"
+#include "TLegend.h"
+#include "TLatex.h"
+#include "TText.h"
+#include "TPaveText.h"
+
+
+void find_ALU_ratio(double my_alu, double my_alu_err, 
+                    double free_p_alu, double free_p_alu_err, 
+                    double &alu_R,double &alu_R_err)
+{
+  alu_R = my_alu/free_p_alu;
+  alu_R_err = alu_R * sqrt(pow(my_alu_err/my_alu,2) + pow(free_p_alu_err/free_p_alu,2)); 
+
+}
+
+
+
+
 void epngamma_BSA_incoherent_Phi()
 {
+
+
+ gStyle->SetOptStat(1);
+ gStyle->SetOptFit(1);
+
+ gStyle->SetLabelSize(0.035, "xyz"); // size of axis value font 
+ gStyle->SetTitleSize(0.035, "xyz"); // size of axis title font 
+ gStyle->SetTitleFont(22, "xyz"); // font option 
+ gStyle->SetLabelFont(22, "xyz");
+ gStyle->SetPadBottomMargin(0.22);  
+ gStyle->SetPadTopMargin(0.08);
+ gStyle->SetPadLeftMargin(0.22);
+ gStyle->SetPadRightMargin(0.08);
+ gStyle->SetFrameBorderMode(0);
+ gStyle->SetPaperSize(20, 24);
+ gStyle->SetLabelSize(0.05, "xy");
+ gStyle->SetTitleSize(0.06, "xy");
+ gStyle->SetTitleSize(0.9);
+
+   TF1 *ffit[6]; 
+   for(int i =0; i<6; i++) {  
+      ffit[i] = new TF1(Form("ffit[%u]",i), "[0]*sin(x*3.14/180.0) / (1+ [1]*cos(x*3.14/180.0))",0.0,360.0);
+      ffit[i]->SetLineColor(kBlack);
+      ffit[i]->SetParName(0,"#alpha");
+      ffit[i]->SetParName(1,"#beta");
+     } 
+
+   TF1 *ffit1[6]; 
+   for(int i =0; i<6; i++) {  
+      ffit1[i] = new TF1(Form("ffit1[%u]",i), "[0]*sin(x*3.14/180.0) / (1+ [1]*cos(x*3.14/180.0))",0.0,360.0);
+      ffit1[i]->SetLineColor(kRed);
+      ffit1[i]->SetParName(0,"#alpha");
+      ffit1[i]->SetParName(1,"#beta");
+     } 
+
 //=========Macro generated from canvas: cxx/
 //=========  (Tue Apr 23 11:55:41 2019) by ROOT version 6.12/06
    TCanvas *cxx = new TCanvas("cxx", "",0,0,1200,1000);
@@ -78,6 +155,7 @@ void epngamma_BSA_incoherent_Phi()
    hasy__53707->GetZaxis()->SetTitleSize(0.035);
    hasy__53707->GetZaxis()->SetTitleFont(22);
    hasy__53707->Draw("");
+   hasy__53707->Fit(ffit[0]);
    TLatex *   tex = new TLatex(10,-0.03,"0.05< p_{s} <0.12");
    tex->SetLineWidth(2);
    tex->Draw();
@@ -135,6 +213,7 @@ void epngamma_BSA_incoherent_Phi()
    hasy__53708->GetZaxis()->SetTitleSize(0.035);
    hasy__53708->GetZaxis()->SetTitleFont(22);
    hasy__53708->Draw("same");
+   hasy__53708->Fit(ffit1[0]);
    cxx_1->Modified();
    cxx->cd();
   
@@ -201,6 +280,7 @@ void epngamma_BSA_incoherent_Phi()
    hasy__53709->GetZaxis()->SetTitleSize(0.035);
    hasy__53709->GetZaxis()->SetTitleFont(22);
    hasy__53709->Draw("");
+   hasy__53709->Fit(ffit[1]);
       tex = new TLatex(10,-0.03,"0.05< p_{s} <0.12");
    tex->SetLineWidth(2);
    tex->Draw();
@@ -256,6 +336,7 @@ void epngamma_BSA_incoherent_Phi()
    hasy__53710->GetZaxis()->SetTitleSize(0.035);
    hasy__53710->GetZaxis()->SetTitleFont(22);
    hasy__53710->Draw("same");
+   hasy__53710->Fit(ffit1[1]);
    cxx_2->Modified();
    cxx->cd();
   
@@ -322,6 +403,7 @@ void epngamma_BSA_incoherent_Phi()
    hasy__53711->GetZaxis()->SetTitleSize(0.035);
    hasy__53711->GetZaxis()->SetTitleFont(22);
    hasy__53711->Draw("");
+   hasy__53711->Fit(ffit[2]);
       tex = new TLatex(10,-0.03,"0.05< p_{s} <0.12");
    tex->SetLineWidth(2);
    tex->Draw();
@@ -377,6 +459,7 @@ void epngamma_BSA_incoherent_Phi()
    hasy__53712->GetZaxis()->SetTitleSize(0.035);
    hasy__53712->GetZaxis()->SetTitleFont(22);
    hasy__53712->Draw("same");
+   hasy__53712->Fit(ffit1[2]);
    cxx_3->Modified();
    cxx->cd();
   
@@ -443,6 +526,7 @@ void epngamma_BSA_incoherent_Phi()
    hasy__53713->GetZaxis()->SetTitleSize(0.035);
    hasy__53713->GetZaxis()->SetTitleFont(22);
    hasy__53713->Draw("");
+   hasy__53713->Fit(ffit[3]);
       tex = new TLatex(10,-0.03,"0.12< p_{s} <0.35");
    tex->SetLineWidth(2);
    tex->Draw();
@@ -498,6 +582,7 @@ void epngamma_BSA_incoherent_Phi()
    hasy__53714->GetZaxis()->SetTitleSize(0.035);
    hasy__53714->GetZaxis()->SetTitleFont(22);
    hasy__53714->Draw("same");
+   hasy__53714->Fit(ffit1[3]);
    cxx_4->Modified();
    cxx->cd();
   
@@ -564,6 +649,7 @@ void epngamma_BSA_incoherent_Phi()
    hasy__53715->GetZaxis()->SetTitleSize(0.035);
    hasy__53715->GetZaxis()->SetTitleFont(22);
    hasy__53715->Draw("");
+   hasy__53715->Fit(ffit[4]);
       tex = new TLatex(10,-0.03,"0.12< p_{s} <0.35");
    tex->SetLineWidth(2);
    tex->Draw();
@@ -619,6 +705,7 @@ void epngamma_BSA_incoherent_Phi()
    hasy__53716->GetZaxis()->SetTitleSize(0.035);
    hasy__53716->GetZaxis()->SetTitleFont(22);
    hasy__53716->Draw("same");
+   hasy__53716->Fit(ffit1[4]);
    cxx_5->Modified();
    cxx->cd();
   
@@ -685,6 +772,7 @@ void epngamma_BSA_incoherent_Phi()
    hasy__53717->GetZaxis()->SetTitleSize(0.035);
    hasy__53717->GetZaxis()->SetTitleFont(22);
    hasy__53717->Draw("");
+   hasy__53717->Fit(ffit[5]);
       tex = new TLatex(10,-0.03,"0.12< p_{s} <0.35");
    tex->SetLineWidth(2);
    tex->Draw();
@@ -740,9 +828,123 @@ void epngamma_BSA_incoherent_Phi()
    hasy__53718->GetZaxis()->SetTitleSize(0.035);
    hasy__53718->GetZaxis()->SetTitleFont(22);
    hasy__53718->Draw("same");
+   hasy__53718->Fit(ffit1[5]);
    cxx_6->Modified();
    cxx->cd();
    cxx->Modified();
    cxx->cd();
    cxx->SetSelected(cxx);
+
+
+// plotting the ratios
+   TCanvas *Can_R = new TCanvas("Can", "",10,10,600,450);
+            Can_R->SetHighLightColor(2);
+            Can_R->SetFillColor(0);
+            Can_R->SetBorderMode(0);
+            Can_R->SetBorderSize(2);
+            Can_R->SetLeftMargin(0.15);
+            Can_R->SetBottomMargin(0.2);
+            Can_R->SetFrameBorderMode(0);
+            Can_R->SetFrameBorderMode(0);
+
+  TH1 * HALU_R = new TH2F("HALU_R","",100,10,170,100,-0.1,1.7);
+        HALU_R->SetStats(0);
+        HALU_R->GetXaxis()->SetTitle("#theta^{#circ}_{s}");
+        HALU_R->GetYaxis()->SetTitle("A_{LU}^{tagged}/A_{LU}^{exclusive}(#phi= 90^{#circ})");
+        HALU_R->GetYaxis()->CenterTitle(true);
+        HALU_R->GetXaxis()->CenterTitle(true);
+        HALU_R->GetXaxis()->SetTitleSize(0.07);
+        HALU_R->GetYaxis()->SetTitleSize(0.07);
+        HALU_R->GetXaxis()->SetNdivisions(605);
+        HALU_R->GetYaxis()->SetNdivisions(605);
+        HALU_R->Draw("");
+
+   TLegend* leg = new TLegend(0.4,0.8,0.92,0.92);
+            leg-> SetNColumns(1);
+            leg->SetFillColor(0);
+            leg->SetTextSize(0.05);
+
+
+        // for the momentum from 0.05 and 0.12
+        double theta_val[3]= {45, 90, 134};
+        double tagged_alu[3];
+        double tagged_alu_err[3];
+        double excl_alu[3];
+        double excl_alu_err[3];
+        double alu_ratio[3];
+        double alu_ratio_err[3];
+
+        for (int j =0; j<4; j++){
+           tagged_alu[j] = ffit[j]->GetParameter(0);
+           tagged_alu_err[j] = ffit[j]->GetParError(0);
+ 
+           excl_alu[j] = ffit1[j]->GetParameter(0);
+           excl_alu_err[j] = ffit1[j]->GetParError(0);
+              
+           find_ALU_ratio(tagged_alu[j], tagged_alu_err[j], 
+                          excl_alu[j], excl_alu_err[j],
+                          alu_ratio[j], alu_ratio_err[j]);
+ 
+                } 
+
+        TGraphErrors *me_gre_R = new TGraphErrors(3);
+                 me_gre_R->SetFillColor(1);
+                 me_gre_R->SetLineWidth(3);
+                 me_gre_R->SetMarkerColor(kBlack);
+                 me_gre_R->SetLineColor(kBlack);
+                 me_gre_R->SetMarkerSize(1.5);
+                 me_gre_R->SetMarkerStyle(21);
+
+
+         me_gre_R->SetPoint(0, theta_val[0], alu_ratio[0] );   me_gre_R->SetPointError(0,0, alu_ratio_err[0] );
+         me_gre_R->SetPoint(1, theta_val[1], alu_ratio[1] );   me_gre_R->SetPointError(1,0, alu_ratio_err[1] );
+         me_gre_R->SetPoint(2, theta_val[2], alu_ratio[2] );   me_gre_R->SetPointError(2,0, alu_ratio_err[2] );
+         me_gre_R->Draw("psame");
+             
+         leg->AddEntry(me_gre_R,"0.05< p_{s}[GeV/c] <0.12","P");        
+
+
+  // for momentum from 0.12 to 0.35
+
+        for (int j =0; j<3; j++){
+           tagged_alu[j] = ffit[j+3]->GetParameter(0);
+           tagged_alu_err[j] = ffit[j+3]->GetParError(0);
+ 
+           excl_alu[j] = ffit1[j+3]->GetParameter(0);
+           excl_alu_err[j] = ffit1[j+3]->GetParError(0);
+              
+           find_ALU_ratio(tagged_alu[j], tagged_alu_err[j], 
+                          excl_alu[j], excl_alu_err[j],
+                          alu_ratio[j], alu_ratio_err[j]);
+ 
+                } 
+
+        TGraphErrors *me_gre_R2 = new TGraphErrors(3);
+                      me_gre_R2->SetFillColor(1);
+                      me_gre_R2->SetLineWidth(3);
+                      me_gre_R2->SetMarkerColor(kBlack);
+                      me_gre_R2->SetLineColor(kBlack);
+                      me_gre_R2->SetMarkerSize(1.5);
+                      me_gre_R2->SetMarkerStyle(21);
+
+
+
+         me_gre_R2->SetPoint(0, theta_val[0], alu_ratio[0]-0.4 );   me_gre_R2->SetPointError(0,0, alu_ratio_err[0] );
+         me_gre_R2->SetPoint(1, theta_val[1], alu_ratio[1]-0.4 );   me_gre_R2->SetPointError(1,0, alu_ratio_err[1] );
+         me_gre_R2->SetPoint(2, theta_val[2], alu_ratio[2]-0.4 );   me_gre_R2->SetPointError(2,0, alu_ratio_err[2] );
+
+         me_gre_R2->SetMarkerColor(kBlue);
+         me_gre_R2->SetLineColor(kBlue);
+         me_gre_R2->SetMarkerSize(1.5);
+         me_gre_R2->SetMarkerStyle(25);
+         me_gre_R2->Draw("psame");
+         leg->AddEntry(me_gre_R2,"0.12< p_{s}[GeV/c] <0.35","P");        
+
+         leg->Draw("same");
+
+   Can_R->Print("ALU_ratio.pdf");
+   Can_R->Print("ALU_ratio.png");
+   Can_R->Print("ALU_ratio.C");
+
+
 }
