@@ -1,0 +1,30 @@
+Mohammad,Hattawy,Old Dominion University,Contact Person, hattawy@jlab.org 
+Moskov,Amaryan,Old Dominion University,Author, mamaryan@odu.edu 
+Stephen,Bultmann,Old Dominion University,Author, sbueltma@odu.edu  
+Gail,Dodge,Old Dominion University,Author, gdodge@odu.edu  
+Nathan,Dzbenski,Old Dominion University,Author, ndzbe001@odu.edu  
+Charles,Hyde,Old Dominion University,Author, chyde@odu.edu   
+Sebastian,Kuhn,Old Dominion University,Spokesperson, skuhn@odu.edu  
+David,Payette,Old Dominion University,Author, dpaye001@odu.edu  
+Jiwan,Poudel,Old Dominion University,Author, jpoud001@odu.edu 
+Larry,Weinstein,Old Dominion University,Author, weinstei@jlab.org  
+Raphael,Dupre,Universite Paris-Saclay,Spokesperson, dupre@ipno.in2p3.fr 
+Michel,Guidal,Universite Paris-Saclay,Author, guidal@ipno.in2p3.fr
+Dominique,Marchand,Universite Paris-Saclay,Author, marchand@ipno.in2p3.fr
+Carlos,Munoz,Universite Paris-Saclay,Author, munoz@ipno.in2p3.fr 
+Silvia,Niccolai,Universite Paris-Saclay,Author, niccolai@ipno.in2p3.fr
+Eric,Voutier,Universite Paris-Saclay,Author, voutier@ipno.in2p3.fr                    
+Kawtar,Hafidi,Argonne National Laboratory,Author, kawtar@anl.gov  
+Zhihong,Yi,Argonne National Laboratory,Author, yez@anl.gov 
+Taya,Chetry,Mississippi State University,Author,chetry@jlab.org 
+Lamiaa,El-Fassi,Mississippi State University,Author, elfassi@jlab.org
+Nathan,Baltzell,Thomas Jefferson National Accelerator Facility,Author, baltzell@jlab.org 
+Gagik,Gavalian,Thomas Jefferson National Accelerator Facility,Author, gavalian@jlab.org 
+Francois-Xavier,Girod,Thomas Jefferson National Accelerator Facility,Author, fxgirod@jlab.org 
+Stepan,Stepanyan,Thomas Jefferson National Accelerator Facility,Author, stepanya@jlab.org
+Ibrahim,Albayrak,Hampton University,Author, albayrak@jlab.org 
+Eric,Christy,Hampton University,Author, christy@jlab.org  
+Aruni,Nadeeshani,Hampton University,Author, arunin@jlab.org 
+Narbe,Kalantarians,Virginia Union University,Author, narbe@jlab.org 
+Carlos,Ayerbe-Gayoso,College of William and Mary,Author, gayoso@jlab.org
+David,Jenkins,Virginia Tech,Author, jenkins@jlab.org
