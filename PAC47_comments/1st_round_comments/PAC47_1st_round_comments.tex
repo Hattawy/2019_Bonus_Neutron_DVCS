@@ -1,0 +1,139 @@
+
+%\documentclass[a4paper,11pt,twoside]{ThesisStyle}
+\documentclass[a4paper,11pt,twoside]{article}
+
+\title{First round comments from Markus Diehl on the proposal ``Neutron DVCS 
+Measurements with BONuS12 in CLAS12''}
+
+
+\date{\today}
+\include{formatAndDefs}
+
+\begin{document}
+
+\maketitle
+
+
+\begin{enumerate}
+   
+   \item In the abstract and summary, you state the goal of 'understanding the
+(impact of) Fermi motion' in DVCS and beyond.  As far as I see, the variables
+$x^*$ and $W^*$ you introduce and discuss are designed to 'bypass' or 'take
+into account' the effect of Fermi motion for extracting DVCS on the neutron.
+But that alone does not give any 'understanding' of these effects, does it?.
+For this, I suppose, you would need to consider additional kinematic
+quantities, and/or compare different distributions.  Can you expand a bit on
+that point?\\
+
+\textcolor{blue}{Response: When tagging, we not only reconstruct the corrected
+variables $x^*$ and $W^*$, we also select a specific phase space of
+the spectator. This not only impacts the result because of the Fermi
+motion itself, but also because of other processes that get in our
+sample because of Fermi motion (in many cases there is no more
+spectator as it gets involved in the reaction). Altogether, the impact
+of Fermi motion is complex and needs to be carefully modeled, this
+data will offer a unique opportunity to validate theoretical
+calculations. Since theory is not existent for tagged DVCS yet, we can
+only speculate on the right observable to make the best test of the
+calculations. However, by analogy to the tagged DIS (the main Bonus
+measurement) we can assume that the angle of production of the
+      spectator will be very important to study.}\\
+
+\item You present in detail the envisaged comparison of data you would take in
+the run addition with or without tagging the scattered neutron.  Can you also
+say something about how you would compare that data with the one from
+E12-11-003 (without the tagged proton), and what specifically one could then
+learn from that comparison?  This would make the complementarity between the
+run group addition and E12-11-003 more concrete.  How could one, for instance,
+correct the E12-11-003 data for nuclear effects based on the measurement you
+propose?\\
+
+\textcolor{blue}{Response: Some of the answer is above already. To complete, 
+      the main idea here will be to check that the integrated result from 
+      E12-11-003 will not suffer from a large bias. If this is small, there is 
+      not much more to do and this data will simply provide a few more points 
+      for GPD fits. If the effect is significant however, the comparison to our 
+      new data of the model used to correct the E12-11-003 is going to be key.  
+      It would be very difficult to correct something never measured. We want 
+      to emphasize here, that while tagged measurements exist for relative 
+      cross sections, it remains largely unknown how this affects beam-spin 
+      asymmetries.}\\
+
+\item You emphasize on p.30 that existing model predictions for FSI effects are
+not available for DVCS.  Despite this caveat, I think it might be a useful
+illustration to see in a figure how the size of effects shown for inclusive
+      DIS in Fig 1.5 compares with your anticipated uncertainties for $A_{LU}$ 
+      in DVCS in Fig 3.12 (unless you argue that this makes little physics 
+      sense).\\
+
+\textcolor{blue}{Response: As mentioned above, there is no indication that the
+beam-spin asymmetry will be affected in a comparable manner. However,
+if this was the case, at large angles (~90 degrees) corrections can be
+massive (about factor 2) and can definitely be seen without any
+problem. In the region of interest (low momentum backward spectator
+protons), cross section is modified by 10-20\%, which should be smaller
+than what we can resolve since the asymmetries are only about 5\% in
+      the first place.}\\
+
+\item  Incidentally, if effects on $A_{LU}$ were similar to those in Fig 1.5, 
+   then a bin of $0.12 GeV < p_{s} < 0.35 GeV$ may wash out the FSI effects for 
+   $\theta_s$ = 90 degrees by averaging over regions of suppression and 
+   enhancement. Perhaps you can say something about the flexibility to choose 
+   different bins in $p_s$ in order to cope with such an eventuality?  (Looking 
+   at Fig 3.10, I guess that you could also just select $0.12 GeV < p_s < 0.25 
+   GeV$ or so, but you can probably make a more informed statement.)\\
+
+\textcolor{blue}{Response: You are correct. The final bins haven't been chosen 
+yet since they depend on the experimental resolution and acceptance of the RTPC 
+for spectator protons.}\\
+
+\item On p.16, you write that "the measurement of this channel [with tagged
+spectator proton] will offer a slightly smaller amount of data as other CLAS12
+measurements."  On p.27, you estimate 9 million proton-tagged neutron DVCS
+events, whereas in the proposal of E12-11-003 (p.49 of the proposal to PAC 37)
+I find an estimate of 25 million DVCS/BH events.  Are these the relevant
+numbers to compare?\\
+
+\textcolor{blue}{Response: Yes, you are correct. However, RG-B has been 
+approved to run about half the approved days this year and BONuS12 will be 
+running before the other half of RG-B. }\\
+
+\item The right-hand plots in Figures 3.1, 3.3, and 3.4 show a rather 
+   'fractured' acceptance in different azimuthal angles.  Does this have an 
+   adverse effect on your acceptance in the angle phi (the one mentioned on 
+   p.27)?  Do you have an acceptance plot for that angle?\\
+
+\textcolor{blue}{Response: This is not really a problem as phi is the difference
+between two planes that depend also on azimuth angles. However, the
+final phi distribution, while looking continuous is full of holes when
+plotted in more than 1-D. This has been a common issue in CLAS for many
+studies for a long time and is resolved through acceptance
+corrections. This is a tedious process, but difficult to avoid with
+the detector as it has been built.}
+
+\item Finally, let me repeat the question raised in the TAC report: can you 
+   give an estimate of how much loss in beam polarization you could tolerate 
+   without compromising the physics output?  Additionally, are there important
+observables that may be less sensitive to this (I am thinking of the ratio of
+$A_{LU}$'s in Figure 3.12)?\\
+
+\textcolor{blue}{Response: The polarization reduction affects linearly our results.
+Simply put, our error bars are constant, but we measure half the
+asymmetries if we have only half polarization. This is rather critical
+in this measurement because the neutron asymmetries are expected to be
+much smaller than on the proton (about 5\%). If the polarization is
+significantly lower than on design, it is very likely that the
+comparison with E12-11-003 will not provide much significance. To test
+models, the measurement is more resilient. As was mentioned, we can
+select parts of the phase space where strong variations are expected
+and this can be tested even with lower polarization.}\\
+
+
+
+\end{enumerate}
+
+
+
+
+
+\end{document}

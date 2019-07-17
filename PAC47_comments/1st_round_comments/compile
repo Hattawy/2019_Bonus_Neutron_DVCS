@@ -1,0 +1,12 @@
+#! /bin/bash
+
+./Clean
+
+pdflatex PAC47_1st_round_comments.tex
+bibtex   PAC47_1st_round_comments
+pdflatex PAC47_1st_round_comments.tex
+pdflatex PAC47_1st_round_comments.tex
+
+rm PAC47_1st_round_comments.aux PAC47_1st_round_comments.bbl PAC47_1st_round_comments.blg PAC47_1st_round_comments.log PAC47_1st_round_comments.out PAC47_1st_round_comments.maf 
+rm PAC47_1st_round_comments.mtc* PAC47_1st_round_comments.mtc1 PAC47_1st_round_comments.nlo
+rm formatAndDefs.aux
